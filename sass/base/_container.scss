@@ -1,0 +1,23 @@
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding); 
+
+    .header & {
+        @extend %flex;
+        }
+        
+    & .filters-btn {
+            @extend %flex;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            justify-content: center;   
+       }
+     & > .projects{
+        @extend %flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--margin-in-section));
+        margin-top: calc(-1 * var(--margin-in-section));
+    }      
+}

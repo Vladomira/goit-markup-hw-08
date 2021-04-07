@@ -1,0 +1,32 @@
+.hero {
+    
+    background-color: var(--section-background);   
+    padding-bottom: 200px;
+    padding-top: 200px;
+    
+
+    &--banner {
+    display: flex;
+    background-color: var(--section-background);
+    max-width: 1600px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
+    }
+
+    &__headline {  
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    max-width: 696px; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+    }
+}
