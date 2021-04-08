@@ -1,25 +1,49 @@
-
 .logo {
-    margin-right: 93px;
-    animation-duration: 3000ms;
-    
-    font-family: var(--secondary-font);
-    font-weight: var(--font-weight-variable);
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: var(--letter-spacing);
-    color: var(--accent-color);
+  // animation-duration: 3000ms;
+
+  font-family: var(--secondary-font);
+  font-weight: var(--font-weight-variable);
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color:  var(--accent-color);
+
+
+  &--change-first {
+     color: #000;
+         }
   
-    &--change-first {
-    color: #000;
-    }
+  &--change-second {
+    color: var(--white-color);   
+   }
 
-    &--change-second {
-    color: var(--white-color);
-    }
 
-    &--footer{
-    display: block;
-    margin-bottom: 20px;
-  }
 }
+
+
+
+
+// .logo {
+//     margin-right: 93px;
+//     animation-duration: 3000ms;
+    
+//     font-family: var(--secondary-font);
+//     font-weight: var(--font-weight-variable);
+//     font-size: 26px;
+//     line-height: 1.19;
+//     letter-spacing: var(--letter-spacing);
+//     color: var(--accent-color);
+  
+//     &--change-first {
+//     color: #000;
+//     }
+
+//     &--change-second {
+//     color: var(--white-color);
+//     }
+
+//     &--footer{
+//     display: block;
+//     margin-bottom: 20px;
+//   }
+// }
