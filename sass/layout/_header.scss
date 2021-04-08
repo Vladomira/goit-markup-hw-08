@@ -8,19 +8,7 @@
 .first-address  {
     display: none;
 }
-.burger-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    
 
-    &__icon {
-        width: 40px;
-        height: 40px;
-        fill: #000;
-
-    }
-}  
 
 .is-open {
     opacity: 1;
@@ -28,24 +16,21 @@
     pointer-events: auto;
 }
 .mobile-menu {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-.mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    background-color: violet;
+    // opacity: 0;
+    // visibility: hidden;
+    // pointer-events: none;
+    
+
+    transition: opacity 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 
     
     &__close-btn {
-        background-color: transparent;
-        border: none;
-        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,12 +39,78 @@
         top: 10px;
         right: 15px;
     }
-    &__close-icon {
-        width: 40px;
-        height: 40px;
+}
 
+.burger-btn,
+.mobile-menu__close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+} 
+
+.burger-btn__icon,
+.mobile-menu__close-icon {
+    width: 40px;
+    height: 40px;
+    fill: #000;
+}
+
+.mobile-menu__pages-link {
+    & { 
+    font-weight: var(--font-weight-middle);
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: var(--main-color);
+    }
+    &--current {
+        color: var(--accent-color);
     }
 }
+.mobile-menu{
+    &__pages-link:not(:last-child)
+    &__contacts-link:not(:last-child) {
+    padding-bottom: 32px;
+    }
+
+    &__contacts-item--mail {
+        font-weight: var(--font-weight-middle);
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+
+        color:var(--paragraph-color);
+    }
+
+    &__contacts-item--tel {
+        padding-top: 302px;
+        font-weight: var(--font-weight-middle);
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+
+        color:var(--accent-color);
+    }
+}
+.mobile-menu {
+    &__social-list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 64px;
+    }
+
+    &__social-item {
+    font-weight: var(--font-weight-middle);
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+    }
+}     
+    
+
 // .navigation,
 // .navigation__main-pages,
 // .first-address {

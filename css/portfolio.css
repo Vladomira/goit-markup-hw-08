@@ -10,6 +10,7 @@
   --section-background: #2F303A;
   --letter-spacing: 0.03em;
   --font-weight-variable: 700;
+  --font-weight-middle: 500;
   --font-size-predominate: 14px;
   --container-padding: 15px;
   --container-width: 1200px;
@@ -123,28 +124,10 @@ body {
   display: none;
 }
 
-.burger-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
-.burger-btn__icon {
-  width: 40px;
-  height: 40px;
-  fill: #000;
-}
-
 .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
-
-.mobile-menu {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .mobile-menu {
@@ -154,13 +137,11 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  background-color: violet;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__close-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,9 +156,69 @@ body {
   right: 15px;
 }
 
+.burger-btn,
+.mobile-menu__close-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.burger-btn__icon,
 .mobile-menu__close-icon {
   width: 40px;
   height: 40px;
+  fill: #000;
+}
+
+.mobile-menu__pages-link {
+  font-weight: var(--font-weight-middle);
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.mobile-menu__pages-link--current {
+  color: var(--accent-color);
+}
+
+.mobile-menu__pages-link:not(:last-child) .mobile-menu__contacts-link:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.mobile-menu__contacts-item--mail {
+  font-weight: var(--font-weight-middle);
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--paragraph-color);
+}
+
+.mobile-menu__contacts-item--tel {
+  padding-top: 302px;
+  font-weight: var(--font-weight-middle);
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 64px;
+}
+
+.mobile-menu__social-item {
+  font-weight: var(--font-weight-middle);
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .logo {
