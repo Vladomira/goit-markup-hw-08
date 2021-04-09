@@ -70,7 +70,6 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
 .header .container {
@@ -415,12 +414,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    color: var(--paragraph-color);
   }
   .first-address__for-contacts:not(:last-child) {
     margin-bottom: 10px;
   }
   .first-address__icon-contacts-letter, .first-address__icon-contacts-smartphone {
     margin-right: 8px;
+    fill: currentColor;
   }
 }
 

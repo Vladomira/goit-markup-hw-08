@@ -29,6 +29,7 @@
         &__for-contacts {
             display: flex;
             align-items: center;
+            color: var(--paragraph-color);
         }
         &__for-contacts:not(:last-child){
             margin-bottom: 10px;
@@ -36,6 +37,7 @@
         &__icon-contacts-letter,
         &__icon-contacts-smartphone {
             margin-right: 8px;
+            fill: currentColor;
         }
      }
 }

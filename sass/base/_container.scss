@@ -1,13 +1,19 @@
 .container {
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;
 
     .header & {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+    // @media screen and (min-width: 768px) and (max-width:1199px){
+    //     .skills & {
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         width: 738px;
+    //     }
+   
 }
 
 

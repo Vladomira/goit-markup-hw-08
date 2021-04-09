@@ -1,32 +1,107 @@
 .hero {
-    
-    background-color: var(--section-background);   
-    padding-bottom: 200px;
-    padding-top: 200px;
-    
-
-    &--banner {
-    display: flex;
     background-color: var(--section-background);
-    max-width: 1600px;
+    width: 100vw;
     margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center ;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
-    }
 
-    &__headline {  
-    font-family: var(--main-font);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--white-color);
-    max-width: 696px; 
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;    
+    &__headline {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 900;
+      margin-bottom: 30px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white-color);
     }
 }
+// mobile+tablet
+@media screen and (max-width:1199px) {
+    .hero {
+        padding-top: 118px;
+        padding-bottom: 118px;
+              
+        &__headline {
+            font-size: 26px;
+            line-height: 1.6;
+        }
+    }
+}
+
+ @media screen and (max-width:767px) {
+    .hero {
+      max-width: 768px;
+      background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-images/a-mobile/hero-mobile.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+             & {
+                background-image: url('../../images/hero-images/a-mobile/hero-mobile@2x.jpg');
+            }
+        }
+        @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+              & {
+                background-image: url('../../images/hero-images/a-mobile/hero-mobile@2x.webp');
+             }
+        }
+ }
+}    
+ 
+
+// // tablet 
+@media screen and (max-width:1199px) {
+   .hero {
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-images/b-tablet/hero-img.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+     & {
+        background-image: url('../../images/hero-images/b-tablet/hero-img@2x.jpg');
+    }
+   }
+   @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+      & {
+        background-image: url('../../images/hero-images/b-tablet/hero-img@2x.webp');
+     }
+    }
+   }
+ }
+
+@media screen and (min-width:1200px){
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-images/c-desktop/hero-img.jpg);
+
+    }
+      &__headline {  
+        font-family: var(--main-font);
+        font-size: 44px;
+        line-height: 1.4;
+        }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+     & {
+        background-image: url('../../images/hero-images/c-desktop/hero-img@2x.jpg');
+    }
+   }
+   @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+      & {
+        background-image: url('../../images/hero-images/c-desktop/hero-img@2x.webp');
+     }
+    }
+}
+      
