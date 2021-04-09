@@ -23,7 +23,6 @@
 
 .link {
   text-decoration: none;
-  display: block;
 }
 
 .list {
@@ -104,7 +103,7 @@ body {
   }
 }
 
-.first-address, .first-address__phone--email, .first-address__phone--tell, .filters-btn, .projects {
+.filters-btn, .projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,20 +114,15 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.navigation__main-pages,
-.first-address {
-  display: none;
-}
-
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  pointer-events: visible;
+@media screen and (max-width: 767px) {
+  .navigation__main-pages,
+  .first-address {
+    display: none;
+  }
 }
 
 .mobile-menu {
@@ -138,17 +132,26 @@ body {
   height: 100vh;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) scale(0.9);
+          transform: translateX(-50%) scale(0.9);
   padding: 48px 40px;
+  pointer-events: none;
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
   background-color: #fff;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  pointer-events: visible;
+  -webkit-transform: translateX(-50%) scale(1);
+          transform: translateX(-50%) scale(1);
 }
 
 .mobile-menu__close-btn {
@@ -205,6 +208,10 @@ body {
   margin-bottom: 32px;
 }
 
+.mobile-menu__contacts-item:not(:last-child) {
+  margin-top: 302px;
+}
+
 .mobile-menu__contacts-link {
   text-decoration: none;
 }
@@ -218,7 +225,6 @@ body {
 }
 
 .mobile-menu__contacts-link--tel {
-  margin-top: 302px;
   font-weight: var(--font-weight-middle);
   font-size: 34px;
   line-height: 1.18;
@@ -255,6 +261,7 @@ body {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .logo {
@@ -272,83 +279,6 @@ body {
 
 .logo--change-second {
   color: var(--white-color);
-}
-
-.first-address__phone {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-weight: 500;
-  font-size: var(--font-size-predominate);
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--paragraph-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
-}
-
-.first-address__phone:hover, .first-address__phone:focus {
-  color: var(--accent-color);
-}
-
-.first-address__for-contacts:hover .first-address__phone,
-.first-address__for-contacts:focus .first-address__phone {
-  -webkit-animation-name: heartBeat;
-          animation-name: heartBeat;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-.first-address {
-  margin-left: auto;
-}
-
-.first-address__for-contacts:not(:last-child) {
-  margin-right: 50px;
-}
-
-.first-address__icon-contacts-letter, .first-address__icon-contacts-smartphone {
-  fill: currentColor;
-}
-
-.first-address__icon-contacts-letter {
-  height: 12px;
-  width: 16px;
-  margin-right: 10px;
-}
-
-.first-address__icon-contacts-smartphone {
-  height: 16px;
-  width: 10px;
-  margin-right: 10px;
-}
-
-.address__location-link, .address__contact-link {
-  font-size: var(--font-size-predominate);
-  line-height: 1.7;
-  letter-spacing: var(--letter-spacing);
-  display: block;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address__location-link {
-  color: var(--white-color);
-}
-
-.address__contact-link {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.address__contacts:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.address__location-link:hover, .address__location-link:focus, .address__contact-link:hover, .address__contact-link:focus {
-  color: var(--accent-color);
 }
 
 .filters {
