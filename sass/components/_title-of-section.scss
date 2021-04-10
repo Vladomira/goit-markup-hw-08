@@ -18,7 +18,8 @@
         letter-spacing: var(--letter-spacing);
         text-align: center;
         display: block;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media screen and (min-width: 1200px) and(max-width: 1600px){

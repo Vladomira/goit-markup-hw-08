@@ -1,57 +1,95 @@
 @media screen and(max-width:767px) {
    .our-staff {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
 
-    width: 100vw;
-    max-width: 480px;
-
-   }
-   &__title {
-    font-size: 28px;
-    line-height: 1.18;
-   }
-.block-for-text {
-    &__names {
-    line-height: 1.19;
-    text-align: center;    
+        width: 100vw;
+        max-width: 480px;
     }
-    &__position {
-        
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
-text-align: center;
-letter-spacing: 0.03em;
-
-color: #757575;
+    &__title {
+        font-size: 28px;
+        line-height: 1.18;
     }
+    .command-list{
+        list-style: none;
+        width: 450px;
+        height: 622px;
+           
+        &.command-list:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+
+    .block-for-text {
+        &__names {
+        line-height: 1.19;
+        text-align: center;    
+        }
+   }
 }
-   
-}
+
+
+
+  
+
 
 @media screen and(max-width:1199px) {
     .our-staff {
        padding-top: var(--mobile-padding-of-section);
        padding-bottom: var(--mobile-padding-of-section);
     }
+    .block-for-text {
+        padding-top: var(--margin-in-section);
+        padding-bottom: 24px;
+   
+        &__position {
+        font-size: 16px;
+        line-height: 1.19;
+    }
+ }
 }
 
-
+// desktop
+@media screen and(min-width:1200px) {
+    .block-for-text {
+        padding-top: var(--margin-in-section);
+        padding-bottom: var(--margin-in-section);
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .block-for-text__position{
+        font-size: 16px;
+        line-height: 1.2; 
+    }
+}
 
 // UNITED 
 @media screen and (max-width:1600px) {
+    .our-staff {
+        background-color: var(--backround-btn);
+    }
     .block-for-text {
         font-weight: var(--font-weight-middle);
         font-size: 16px;        
         letter-spacing: var(--letter-spacing); 
-        margin-bottom: 10px; 
+        text-align: center;
     }   
+    .block-for-text__position{
+        color: var(--paragraph-color);
+        letter-spacing: var(--letter-spacing);
+        margin-bottom: 16px;
+        text-align: center;
+     }
+    .social-list{
+        margin-bottom: 16px;
+    } 
+    .command-list {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
 }
 
 // .our-staff {
