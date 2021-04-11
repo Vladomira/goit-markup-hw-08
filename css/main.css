@@ -1613,6 +1613,13 @@ body {
     height: 100%;
     padding: 40px;
   }
+  .form__title {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: var(--font-weight-variable);
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+  }
   .form__wrapper-user-field {
     position: relative;
     display: block;
@@ -1782,13 +1789,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .form__title {
-    display: block;
-    margin-bottom: 12px;
-    font-weight: var(--font-weight-variable);
     font-size: 20px;
     line-height: 1.15;
-    text-align: center;
-    letter-spacing: var(--letter-spacing);
   }
   .checkbox-square__label {
     font-size: 14px;
@@ -1802,11 +1804,8 @@ body {
     line-height: 1.17;
   }
   .form__title {
-    font-weight: var(--font-weight-variable);
     font-size: 20px;
     line-height: 1.5;
-    text-align: center;
-    letter-spacing: var(--letter-spacing);
   }
 }
 /*# sourceMappingURL=main.css.map */
