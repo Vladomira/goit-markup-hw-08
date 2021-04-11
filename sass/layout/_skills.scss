@@ -1,36 +1,30 @@
-@media screen and(max-width: 767px) {
+// desktop
+@media screen and (min-width: 1200px) {
     .skills {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       margin: 0 auto;
-
-       width: 100vw;
-       max-width: 480px;  
-    }
-    .description{ 
-    &__block:not(:last-child) {
-        margin-bottom: 30px;
-    }
-    &__block {
-        max-width: 450px;
-    }
-    &__skills-block{
         display: flex;
         align-items: center;
-        justify-content: center;
-        max-width: 450px;
-        height: 120px;
-        background-color: var(--backround-btn);
-    }
-   
-    &__title-description {
-        text-align: center;
-        margin-bottom: 10px;
+        padding-top: var(--padding-of-section);
+        padding-bottom: var(--padding-of-section);
+     }
+    .description {
+        display: flex;
+        align-items: center;
+        margin-left: calc(-1*var(--margin-in-section));
+        margin-top: calc(-1*var(--margin-in-section));
+    
+        &__block {
+            margin-left: var(--margin-in-section);
+            margin-top: var(--margin-in-section);
+            height: 251px;
+            width: 270px;
+            }
+    
+        &__skills-block {  
+        width: 270px;
+        height: 120px; 
+        }
     }
     
-  }
 }
 @media screen and (max-width:1199px){
     .skills {
@@ -102,35 +96,31 @@
     }
 }
 
-// desktop
-@media screen and (min-width: 1200px)and (max-width:1600px){
-    .skills {
+
+@media screen and(max-width: 767px) {
+    .description{ 
+    &__block:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    &__block {
+        max-width: 450px;
+    }
+    &__skills-block{
         display: flex;
         align-items: center;
-        padding-top: var(--padding-of-section);
-        padding-bottom: var(--padding-of-section);
-     }
-    .description {
-        display: flex;
-        align-items: center;
-        margin-left: calc(-1*var(--margin-in-section));
-        margin-top: calc(-1*var(--margin-in-section));
-    
-        &__block {
-            margin-left: var(--margin-in-section);
-            margin-top: var(--margin-in-section);
-            height: 251px;
-            width: 270px;
-            }
-    
-        &__skills-block {  
-        width: 270px;
-        height: 120px; 
-        }
+        justify-content: center;
+        max-width: 450px;
+        height: 120px;
+        background-color: var(--backround-btn);
+    }
+   
+    &__title-description {
+        text-align: center;
+        margin-bottom: 10px;
     }
     
+  }
 }
-
 
 
 

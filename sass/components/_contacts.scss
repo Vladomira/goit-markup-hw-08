@@ -1,5 +1,4 @@
 // tablet
-
 @media screen and (min-width: 768px) and (max-width: 1199px){
     .first-address{
         display: flex;
@@ -41,7 +40,7 @@
         }
      }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px){
+@media screen and (min-width: 768px) {
     .first-address__phone {
         &:hover,
         &:focus {
@@ -49,7 +48,7 @@
         } 
     }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px){
+@media screen and (min-width: 1200px){
     .first-address {
             display: flex;
             align-items: center;
@@ -93,6 +92,7 @@
                 height: 16px;
                 width: 10px;
             }
+            
         }
     }
 .first-address__phone {
@@ -104,38 +104,53 @@
     }
 }
         
-
-        
-        
-        
-
-//
-
-// // footer
-// .address {
-//     &__location-link,
-//     &__contact-link {
-//     font-size: var(--font-size-predominate);
-//     line-height: 1.7;
-//     letter-spacing: var(--letter-spacing);
-//     display: block;
-
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     } 
-//     &__location-link   { 
-//         color: var(--white-color);
-//     }
-//     &__contact-link {
-//     color: rgba(255, 255, 255, 0.6);
-//     } 
-//     &__contacts:not(:last-child) {
-//         margin-bottom: 9px;
-//     }
-//     &__location-link:hover,
-//     &__location-link:focus,
-//     &__contact-link:hover,
-//     &__contact-link:focus{
-//     color: var(--accent-color);
-//     }
+ // footer
+@media screen and (min-width:1200px){
+    .address {
+        &__location-link,
+        &__contact-link {
+        font-size: var(--font-size-predominate);
+        line-height: 1.7;
+        letter-spacing: var(--letter-spacing);
+        display: block;
     
-// }
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        } 
+        &__location-link   { 
+            color: var(--white-color);
+        }
+        &__contact-link {
+        color: rgba(255, 255, 255, 0.6);
+        } 
+        &__contacts:not(:last-child) {
+            margin-bottom: 9px;
+        }
+        &__location-link:hover,
+        &__location-link:focus,
+        &__contact-link:hover,
+        &__contact-link:focus{
+        color: var(--accent-color);
+        }
+    }
+}
+
+
+@media screen and (max-width:1199px){
+    .address{
+        &__list {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: var(--letter-spacing);
+        }
+        &__contacts{
+            margin-bottom: 8px;
+        }
+        &__location-link{
+            color:var(--white-color);
+        }
+        &__contact-link{
+        color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}

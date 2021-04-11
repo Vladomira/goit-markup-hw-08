@@ -1,67 +1,79 @@
-
-// mobile
-@media screen and (max-width: 767px){
+   
+// desktop
+@media screen  and(min-width:1200px){
     .clients {
-       max-width: 480px;
-       width: 100vw;
-       padding-top: var(--mobile-padding-of-section);
-       padding-bottom: var(--mobile-padding-of-section);
-    }
-    .clients-list {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .clients-list__item{
-        width: 210px;
-        height: 90px;    
-        
-        &:nth-child(2n+1) {
-            margin-right: 30px;
-        }
-      
-        &:nth-child(-n+4){
-            margin-bottom: 30px;
+        padding-bottom: var(--padding-of-section);
+        padding-top: 94px; 
+         
+        &__title { 
+            font-weight: var(--font-weight-variable);
+            font-size: 36px;
+            letter-spacing: var(--letter-spacing);
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;  
+            line-height: 1.16;
         }
     }
-}
+.clients-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: calc(-1*var(--margin-in-section));
 
-// tablet
-@media screen and (max-width: 1199px){
-    .clients {
-        max-width: 768px;
-        width: 100vw;
-        padding-top: var(--mobile-padding-of-section);
-        padding-bottom: var(--mobile-padding-of-section);
-     }
-    .clients-list {
-        display: flex;
-        flex-wrap: wrap;
-     }
-    .clients-list{
-        &__item{
-            width: 226px;
-            height: 90px; 
-        }
-        &__item:nth-child(3n+1){
-            margin-left: 30px;
-        }
-        &__item:nth-child(-n+3){
-            margin-bottom: 30px;
-        }
-       
-     }
-}
-
-// united
-@media screen  and(max-width:1600px){
-    .clients {
+        &__item {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 170px;
+        height: 90px;
+        border: 1px solid #AFB1B8; 
+        border-radius: 4px;
+        margin-left: var(--margin-in-section);
+        }
+  }
+}
+
+
+
+// united
+@media screen  and(min-width:320px){
+    .clients,
+    .clients-list,
+    .clients-list__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .clients {
+        width: 100vw;
         margin-left: auto;
         margin-right: auto;
     }
-    
+    .clients-list{
+        &__item  { 
+        border: 1px solid #AFB1B8; 
+        border-radius: 4px;
+        }
+        &__item:hover,
+        &__item:focus {
+            border: 1px solid var(--accent-color);
+        }
+        &__link {
+            width: 100%;
+            height: 100%;
+            color: var(--social-links-color);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &__link {
+            &:hover,
+            &:focus {
+             color:var(--accent-color);
+            }
+        }
+       
     .clients-list__icon {
         fill: currentColor;
     
@@ -75,7 +87,7 @@
         }
         &--third {
             width: 41px;
-            height: 42
+            height: 42px;
         }
         &--fourth{
             width: 80px;
@@ -89,83 +101,62 @@
             width: 88px;
             height: 45px;
         }
-    }
-    .clients-list{
-        &__item  { 
-        @extend %flex;
+    }    
+ }
+
+
+// tablet
+@media screen and (min-width:768px) and (max-width: 1199px){
+    .clients {
+        max-width: 768px;    
+     }
+    .clients-list {
         justify-content: center;
-        border: 1px solid #AFB1B8; 
-        border-radius: 4px;
+     }
+    .clients-list{
+        &__item{
+            width: 226px;
+            height: 90px; 
+        } 
+        &__item:nth-child(3n+1){
+            margin-right: 30px;
         }
-        &__link {
-            color: var(--social-links-color);
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &__item:nth-child(-n+3){
+            margin-bottom: 30px;
         }
-        &__link {
-            &:hover,
-            &:focus {
-                color:var(--accent-color)
-            }
+        &__item:nth-last-of-type(3n+1){
+            margin-left: 30px;
         }
     }
 }
 
-// .clients {
-//     padding-bottom: var(--padding-of-section);
-//     padding-top: 94px;
-    
-//     &__title { 
-//         font-weight: var(--font-weight-variable);
-//         font-size: 36px;
-//         letter-spacing: var(--letter-spacing);
-//         text-align: center;
-//         display: block;
-//         margin-left: auto;
-//         margin-right: auto;
-//         margin-bottom: 50px;  
-//         line-height: 1.16;
-//     }
-// }
-// .clients-list {
-//     @extend %flex;
-//     flex-wrap: wrap;
-//     margin-left: calc(-1*var(--margin-in-section));
-
-//
-
-//     &__item {
-//     @extend %flex;
-//     justify-content: center;
-//     width: 170px;
-//     height: 90px;
-//     border: 1px solid #AFB1B8; 
-//     border-radius: 4px;
-//     margin-left: var(--margin-in-section);
-//     }
-
-//     &__link {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: var(--social-links-color);
-//     width: 100%;
-//     height: 100%;
-    
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     }
-//     &__icon{
-//         fill: currentColor;
-//     }
-// }
-
-// .clients-list {
-//     &__link:hover,
-//     &__link:focus {
-//         color: var(--accent-color);
-//     }
-//     &__item:hover,
-//     &__item:focus {
-//         border: 1px solid var(--accent-color);
-//     }
-// }
-
+// mobile+tablet
+@media screen and (min-width: 480px) and (max-width:1199px){
+    .clients {
+        padding-top: var(--mobile-padding-of-section);
+        padding-bottom: var(--mobile-padding-of-section);
+     }
+    .clients-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+// mobile
+@media screen and (min-width:320px) and (max-width: 767px){
+    .clients {
+       max-width: 480px;
+    }
+    .clients-list__item{
+        width: 210px;
+        height: 90px;    
+        
+        &:nth-last-of-type(2n+1) {
+            margin-left: 30px;
+        }
+      
+        &:nth-child(-n+4){
+            margin-bottom: 30px;            
+        }
+    }
+}
+}

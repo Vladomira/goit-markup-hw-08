@@ -1,36 +1,95 @@
-.footer{
-    background-color: var(--section-background);
-    padding-top: 60px;
-    padding-bottom: 60px;
-   
-    &__address-box {
-    display: flex;
-    flex-direction: column; 
+@media screen and (min-width:320px){
+    .footer {
+        background-color: var(--section-background);
+    }
+}
+@media screen and(min-width: 1200px) {
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+        &__address-box {
+        display: flex;
+        flex-direction: row; 
+        align-items: baseline;
+        } 
+        &__general-box  {
+        display: flex;
+        align-items: baseline;
+        }
+    }
+    .subscription {
+        margin-left: 93px;
+    }
+    .join {
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        margin-right: auto;
+    
+        &__text {
+            font-weight: var(--font-weight-variable);
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: var(--letter-spacing);
+            text-transform: uppercase;
+            color: #FFFFFF; 
+            margin-bottom: 20px;
+        }
+        
     } 
-    &__general-box  {
-    display: flex;
-    align-items: baseline;
+}
+
+// tablet 
+@media screen and(min-width:768px) and (max-width:1199px){
+    .footer__address-box {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: baseline ;
+        margin-bottom: var(--mobile-padding-of-section);
     }
 }
 
 
-
-.join {
-    display: flex;
-    flex-direction: column;
-    margin-left: 70px;
-    margin-right: auto;
-
-    &__text {
+// mobile +tablet
+@media screen and(max-width:1199px){
+    .footer {
+        padding-top: var(--mobile-padding-of-section);
+        padding-bottom: var(--mobile-padding-of-section);
+    }
+    .join{
+        margin-top: var(--mobile-padding-of-section);
+        margin-bottom: var(--mobile-padding-of-section);
+    }
+    .join__text,
+    .subscription__title{
         font-weight: var(--font-weight-variable);
         font-size: 14px;
         line-height: 1.14;
+        text-align: center;
         letter-spacing: var(--letter-spacing);
         text-transform: uppercase;
-        color: #FFFFFF; 
+        color: var(--white-color);
+
         margin-bottom: 20px;
     }
     
-} 
+    .sign-up{
+        display: flex;
+        flex-direction: column;
 
+        &__email {
+        width: 450px;
+        height: 50px;
+        margin-bottom: 20px;
+        }
+       &__btn{
+        width: 200px;
+        height: 50px;
+
+        margin-left: 0;
+       }
+    }
+}
 
