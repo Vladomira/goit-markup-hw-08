@@ -29,18 +29,18 @@
     height: 20px;
     }
 }
-// .social-list {
-//     &--margin {
-//     display: flex;
-//     align-items: center;
-//     margin-bottom: -10px;
-//     margin-left: -10px;     
-//     }
-//     &__items--margin {
-//     margin-bottom: 10px;
-//     margin-left: 10px;
-//     } 
-// }
+.social-list {
+    &--margin {
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+    margin-left: -10px;     
+    }
+    &__items--margin {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    } 
+}
 .social-link--footer-identity {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%; 

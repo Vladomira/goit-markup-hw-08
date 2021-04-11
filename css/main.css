@@ -1113,6 +1113,20 @@ body {
     width: 20px;
     height: 20px;
   }
+  .social-list--margin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: -10px;
+    margin-left: -10px;
+  }
+  .social-list__items--margin {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
   .social-link--footer-identity {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -1799,6 +1813,10 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
+  .backdrop-modal {
+    width: 100vw;
+    max-width: 480px;
+  }
   .checkbox-square__label {
     font-size: 12px;
     line-height: 1.17;
