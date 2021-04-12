@@ -883,8 +883,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-left: calc(-1*var(--margin-in-section));
     margin-bottom: calc(-1*var(--margin-in-section));
   }
