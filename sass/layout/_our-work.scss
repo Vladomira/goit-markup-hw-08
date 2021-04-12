@@ -11,7 +11,7 @@
     .work-list {
         display: flex;
         align-items: center;
-        // flex-wrap: wrap;
+        justify-content: center;
         margin-left: calc(-1*var(--margin-in-section));
         margin-bottom: calc(-1*var(--margin-in-section));
         
