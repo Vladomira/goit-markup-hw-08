@@ -4,26 +4,28 @@
     width: 100vw;
     
     margin: 0 auto;
-
+    
     .header & {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-   
+
 }
 
 
 @media screen and (min-width: 480px){
     .container {
       max-width: 480px;
-      
+      width: 100vw;
     }
+   
 }
 
 @media screen and (min-width: 768px) {
     .container {
-       max-width: 768px;
+     max-width: 768px;
+     width: 100vw;
     }
 }
 
@@ -35,9 +37,7 @@
 
 // .container {
 //     width: var(--container-width);
-//     margin: 0 auto;
-//     padding-left: var(--container-padding);
-//     padding-right: var(--container-padding); 
+//    
 
 //     .header & {
 //         @extend %flex;
