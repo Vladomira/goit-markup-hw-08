@@ -3,7 +3,7 @@
   
 }
 
-// // tablet+desktop
+//  tablet+desktop
 @media screen and(min-width:768px) {
     .mobile-menu,
     .burger-btn{
@@ -78,11 +78,6 @@
     }
 } 
 @media screen and(min-width:1200px) {
-    .header {
-        width: 100vw;
-        max-width: 1200px;
-      
-    }
     .navigation__main-pages {
         margin-left: 93px;
     }
@@ -94,10 +89,6 @@
         margin-left: 88px;
         margin-right: 84px; 
        }
-    .header {
-        width: 100vw;
-        max-width: 768px;
-      }
 }
 // mobile
 @media screen and (max-width: 767px){
@@ -108,7 +99,6 @@
     .header {
         padding-bottom: 16px;
         padding-top: 16px;
-        
     }
     .burger-btn {
         padding-top: 10px;

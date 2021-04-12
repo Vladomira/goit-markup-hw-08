@@ -31,7 +31,6 @@
     margin-bottom: 20px;
     }
 }
-
 .form__user-comment {
     resize:none;
     width: 100%;
@@ -180,10 +179,6 @@
     } 
 }
 @media screen and (min-width:320px) and (max-width:1199px){
-    .backdrop-modal {
-        width: 100vw;
-        max-width: 480px;
-    }
     .checkbox-square__label {
         font-size: 12px;
         line-height: 1.17;

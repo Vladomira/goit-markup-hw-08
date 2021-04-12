@@ -196,10 +196,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .header {
-    width: 100vw;
-    max-width: 1200px;
-  }
   .navigation__main-pages {
     margin-left: 93px;
   }
@@ -209,10 +205,6 @@ body {
   .navigation__main-pages {
     margin-left: 88px;
     margin-right: 84px;
-  }
-  .header {
-    width: 100vw;
-    max-width: 768px;
   }
 }
 
@@ -976,10 +968,6 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .our-staff {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .command {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1467,6 +1455,10 @@ body {
             flex-direction: row;
     margin-right: auto;
   }
+  .sign-up__icon-send {
+    width: 24px;
+    height: 24px;
+  }
   .sign-up__email {
     width: 358px;
     height: 50px;
@@ -1813,10 +1805,6 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
-  .backdrop-modal {
-    width: 100vw;
-    max-width: 480px;
-  }
   .checkbox-square__label {
     font-size: 12px;
     line-height: 1.17;
