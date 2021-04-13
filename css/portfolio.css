@@ -71,7 +71,7 @@ body {
 .container {
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
 }
 
