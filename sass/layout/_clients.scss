@@ -42,7 +42,7 @@
 
 // mobile
 @media screen and (min-width:320px) and (max-width: 767px){
-    .clients {
+    .clients-list {
         display: flex;
         flex-wrap: wrap;
         }
@@ -59,7 +59,6 @@
         //     margin-bottom: 30px;            
         // }
     }
-
 }
 // mobile+tablet
 @media screen and (min-width: 320px) and (max-width:1199px){

@@ -1205,7 +1205,7 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .clients {
+  .clients-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
