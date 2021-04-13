@@ -1,7 +1,7 @@
 .container {
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);
-     
+    width: 100vw; 
     margin: 0 auto;
     
     .header & {
@@ -23,7 +23,7 @@
 @media screen and (min-width: 768px) {
     .container {
      max-width: 768px;
-     width: 100vw;
+     
 
     }
 }
