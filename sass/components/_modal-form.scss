@@ -91,9 +91,9 @@
     background-image: url(../images/checkbox/checkbox.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 16px;
-    height: 16px;
-    margin-right: 7px;
+//     width: 16px;
+//     height: 16px;
+//     margin-right: 7px;
     border: 2px solid var(--main-color);
     border-radius: 2px;
     cursor: pointer;  
@@ -168,7 +168,20 @@
         font-size: 12px;
         line-height: 1.17;
     }
-    
+    .checkbox-square__label::before {
+            content: "";
+            display: block;
+            background-image: url(../images/checkbox/checkbox.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 16px;
+            height: 15px;
+        //     margin-right: 7px;
+            border: 2px solid var(--main-color);
+            border-radius: 2px;
+            cursor: pointer;  
+            scale: 1; 
+    }
    
 }
 
