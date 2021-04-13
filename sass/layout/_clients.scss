@@ -45,19 +45,19 @@
     .clients-list {
         display: flex;
         flex-wrap: wrap;
-        }
+    }
     
     .clients-list__item{
         width: 210px;
         height: 90px;    
                 
-        // &:nth-last-of-type(2n+1) {
-        //     margin-left: 30px;
-        // }
+        &:nth-last-of-type(2n+1) {
+            margin-left: 30px;
+        }
       
-        // &:nth-child(-n+4){
-        //     margin-bottom: 30px;            
-        // }
+        &:nth-child(-n+4){
+            margin-bottom: 30px;            
+        }
     }
 }
 // mobile+tablet
