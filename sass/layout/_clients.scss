@@ -4,6 +4,7 @@
     .clients {
         padding-bottom: var(--padding-of-section);
         padding-top: 94px; 
+        display: flex;
         align-items: center;
         justify-content: center;
          
@@ -22,7 +23,6 @@
 .clients-list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     margin-left: calc(-1*var(--margin-in-section));
 
         &__item {
@@ -30,17 +30,19 @@
         align-items: center;
         justify-content: center;
         width: 170px;
-        height: 90px;
+        height: 92px;
         border: 1px solid #AFB1B8; 
         border-radius: 4px;
         margin-left: var(--margin-in-section);
         }
   }
 } 
-// and (max-width: 767px)
+
+
+
 // mobile
-@media screen and (min-width:320px){
-    .clients-list {
+@media screen and (min-width:320px) and (max-width: 767px){
+    .clients {
         display: flex;
         flex-wrap: wrap;
         }
