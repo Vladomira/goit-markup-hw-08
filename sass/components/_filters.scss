@@ -1,4 +1,4 @@
-@media screen and (min-width:320px) {
+// united
     .filters-btn {
         display: flex;
     }
@@ -29,7 +29,7 @@
     .filters-btn__item:not(:last-child) {
     margin-right: 8px;    
     }
-}
+
 @media screen and (min-width: 1200px){
     .filters {
         padding-top: var(--padding-of-section); 
