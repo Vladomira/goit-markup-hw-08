@@ -1520,95 +1520,103 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .subscription__title {
-    display: block;
-    margin-bottom: 20px;
-    font-weight: var(--font-weight-variable);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: var(--letter-spacing);
-    text-transform: uppercase;
-    color: var(--white-color);
-  }
-  .sign-up {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: auto;
-  }
-  .sign-up__icon-send {
-    width: 24px;
-    height: 24px;
-  }
-  .sign-up__email {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: transparent;
-    padding-top: 15px;
-    padding-left: 16px;
-    padding-bottom: 15px;
-    cursor: pointer;
-  }
-  .sign-up__email::-webkit-input-placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .sign-up__email:-ms-input-placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .sign-up__email::-ms-input-placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .sign-up__email::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .sign-up__email[placeholder] {
-    color: #fff;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: var(--letter-spacing);
-  }
-  .sign-up__btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 200px;
-    height: 50px;
-    padding: 10px 28px;
-    background-color: var(--accent-color);
-    border-radius: 4px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 12px;
-    cursor: pointer;
-    border: none;
-    font-weight: var(--font-weight-variable);
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-  }
+.subscription__title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: var(--font-weight-variable);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.sign-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
+.sign-up__icon-send {
+  width: 24px;
+  height: 24px;
+}
+
+.sign-up__email {
+  max-width: 358px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.sign-up__email::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-up__email:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-up__email::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-up__email::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-up__email[placeholder] {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: var(--letter-spacing);
+}
+
+.sign-up__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 12px;
+  cursor: pointer;
+  border: none;
+  font-weight: var(--font-weight-variable);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
 }
 
 .backdrop {
