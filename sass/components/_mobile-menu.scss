@@ -92,6 +92,7 @@
     
         &__social-list {
             display: flex;
+            flex-wrap: wrap;
         }
         &__social-item {
             font-weight: var(--font-weight-middle);

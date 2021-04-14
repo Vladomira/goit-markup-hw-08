@@ -71,7 +71,7 @@ body {
 .container {
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -93,7 +93,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -196,6 +196,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .mobile-menu__social-item {
     font-weight: var(--font-weight-middle);
@@ -631,14 +633,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .filters-btn {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-bottom: 40px;
     margin-top: calc(-1 * 15px);
     margin-left: calc(-1 * 8px);
@@ -761,7 +757,7 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .projects__card:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -785,10 +781,8 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .footer {
-    background-color: var(--section-background);
-  }
+.footer {
+  background-color: var(--section-background);
 }
 
 @media screen and (min-width: 1200px) {

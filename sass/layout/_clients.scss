@@ -41,9 +41,10 @@
 
 
 // mobile
-@media screen and (min-width:320px) and (max-width: 767px){
+@media screen  and (max-width: 767px){
     .clients-list {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         margin-right: -30px;        
     }
@@ -62,7 +63,7 @@
     }
 }
 // mobile+tablet
-@media screen and (min-width: 320px) and (max-width:1199px){
+@media screen  and (max-width:1199px){
     .clients{
         padding-top: var(--mobile-padding-of-section);
         padding-bottom: var(--mobile-padding-of-section);
@@ -98,7 +99,6 @@
 
 
 // united
-@media screen  and(min-width:320px){
     .clients-list__link {
         display: flex;
         align-items: center;
@@ -158,7 +158,7 @@
             height: 45px;
         }
     }    
- }
+
 
 
 
