@@ -749,7 +749,7 @@ body {
     padding-bottom: 118px;
   }
   .hero__headline {
-    width: 360px;
+    max-width: 360px;
     font-size: 26px;
     line-height: 1.6;
   }
