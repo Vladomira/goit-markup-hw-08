@@ -1,3 +1,12 @@
+.first-address__phone {
+    .first-address__for-contacts:hover &,
+    .first-address__for-contacts:focus &{
+        animation-name: heartBeat;
+        animation-duration: 2000ms;
+        animation-timing-function: linear;
+    }
+    }
+
 // tablet
 @media screen and (min-width: 767px) and (max-width: 1199px){
     .first-address{
@@ -94,18 +103,10 @@
             }
             
         }
-    }
-.first-address__phone {
-    .first-address__for-contacts:hover &,
-    .first-address__for-contacts:focus &{
-        animation-name: heartBeat;
-        animation-duration: 2000ms;
-        animation-timing-function: linear;
-    }
-}
+    
         
  // footer
-@media screen and (min-width:1200px){
+
     .address {
         &__location-link,
         &__contact-link {

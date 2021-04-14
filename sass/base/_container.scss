@@ -1,39 +1,33 @@
 .container {
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);
-    width: 100vw; 
+    width: 100%; 
     margin: 0 auto;
-    
-    .header & {
+
+    .header &{   
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
+    }  
 }
-
-
-@media screen and (max-width: 767px){
+@media screen and (min-width: 480px){
     .container {
       max-width: 480px;
     }
-   
 }
-
 @media screen and (min-width: 768px) {
     .container {
-     max-width: 768px;
-     
+     max-width: 768px;     
     }
 }
-
 @media screen and (min-width: 1200px) {
     .container {
       max-width: 1200px;
     }
 }
 
-        
+ 
+
 //     & .filters-btn {
 //             @extend %flex;
 //             flex-wrap: wrap;
