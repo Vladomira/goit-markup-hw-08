@@ -75,6 +75,18 @@ body {
   margin: 0 auto;
 }
 
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -217,19 +229,6 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-}
-
-.header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1542,8 +1541,6 @@ body {
 }
 
 .sign-up__email {
-  max-width: 358px;
-  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1612,6 +1609,19 @@ body {
   line-height: 1.9;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 1199px) {
+  .sign-up__email {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up__email {
+    width: 358px;
+  }
 }
 
 .backdrop {

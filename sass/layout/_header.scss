@@ -1,12 +1,7 @@
 .header {
     border-bottom: 1px solid #ececec;  
 }
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
+
 
 //  tablet+desktop
 @media screen and(min-width:768px) {
