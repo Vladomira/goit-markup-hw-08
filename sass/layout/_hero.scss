@@ -1,7 +1,5 @@
 
   .hero {
-    max-width: 1600px;
-    
     background-color: var(--section-background);
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,6 +25,7 @@
 // desktop
 @media screen and (min-width:1200px){
   .hero {
+      max-width: 1600px;
       padding-top: 200px;
       padding-bottom: 200px;
       
@@ -34,7 +33,7 @@
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/c-desktop/hero-img.jpg);
   
     &__headline {  
-      max-width: 696px;
+      width: 696px;
       font-weight: 900;
       font-family: var(--main-font);
       font-size: 44px;
@@ -107,6 +106,7 @@
       height: 400px;
       padding-top: 118px;
       padding-bottom: 118px;
+      
               
         &__headline {
           width: 360px; 

@@ -1,6 +1,12 @@
 .header {
-    border-bottom: 1px solid #ececec;
-  
+    border-bottom: 1px solid #ececec;  
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    align-items: center;
 }
 
 //  tablet+desktop
