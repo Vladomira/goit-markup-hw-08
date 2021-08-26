@@ -187,7 +187,7 @@ body {
   }
   .mobile-menu__contacts-link--tel {
     font-weight: var(--font-weight-middle);
-    font-size: 34px;
+    font-size: 25px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--accent-color);
@@ -204,6 +204,7 @@ body {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 10px;
   }
   .mobile-menu__social-link {
     color: var(--accent-color);
